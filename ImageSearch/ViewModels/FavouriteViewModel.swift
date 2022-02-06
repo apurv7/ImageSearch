@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK:- viewmodel for favourites VC
 class FavouriteViewModel {
     
     ///method to get all favourite images

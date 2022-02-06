@@ -40,12 +40,15 @@ extension SearchViewController {
         
         self.manager.cells.removeAll()
         
+        //2 sections are shown if users searches and there are already recent items available
         if let _ = self.manager.imageModel {
             self.manager.cells.append(.searched)
         }
+        
         if self.manager.getRecentlySavedImages().count > 0 {
             self.manager.cells.append(.recent)
         }
+        
         self.reloadTableView()
         self.view.removeLoader()
     }

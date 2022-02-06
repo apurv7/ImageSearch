@@ -7,6 +7,7 @@
 
 import Foundation
 
+//MARK:- viewmodel for search VC
 class SearchViewModel {
     
     ///image object

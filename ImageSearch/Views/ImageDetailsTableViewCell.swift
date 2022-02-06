@@ -22,6 +22,8 @@ class ImageDetailsTableViewCell: UITableViewCell {
         didSet {
             self.lblTitle.text = imageModel.getTitle()
             self.lblDate.text = imageModel.getDate()
+            
+            //first checks in cache, otherwise downloads
             self.ivPic.loadImageUsingCache(withUrl: imageModel.getUrl())
             
             if imageModel.isFavouriteImage() {

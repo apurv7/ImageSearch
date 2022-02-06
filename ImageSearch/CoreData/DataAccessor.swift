@@ -47,7 +47,10 @@ class DataAccessor {
                 return nil
             }
             
+            //save image
             self.saveImage()
+            
+            //return image object
             return imageData
         } catch let error {
             print(error)
